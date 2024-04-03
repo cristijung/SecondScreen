@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyWoof</string>
+    <string name="app_name">MyWoofWoof</string>
     <string name="dog_name_1">Koda</string>
     <string name="dog_name_2">Leia</string>
     <string name="dog_name_3">Seth</string>
@@ -9,6 +9,7 @@
     <string name="dog_name_7">Moana</string>
     <string name="dog_name_8">Otto</string>
     <string name="dog_name_9">Dobby</string>
+    <string name="dog_name_10">Bastião</string>
     <string name="dog_description_1">Comer guloseimas no terraço</string>
     <string name="dog_description_2">Latir para o papai</string>
     <string name="dog_description_3">Roubar meias</string>
@@ -18,7 +19,9 @@
     <string name="dog_description_7">Lambendo suas patas</string>
     <string name="dog_description_8">Banho de sol</string>
     <string name="dog_description_9">Dormindo em lugares diferentes</string>
+    <string name="dog_description_10">Sempre no charme</string>
     <string name="about">Sobre:</string>
     <string name="years_old">%d idade</string>
     <string name="expand_button_content_description">Veja + ou - informações sobre um cachorro.</string>
 </resources>
+
