@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">SecondScreen</string>
+    <string name="app_name">MyWoof</string>
+    <string name="dog_name_1">Koda</string>
+    <string name="dog_name_2">Leia</string>
+    <string name="dog_name_3">Seth</string>
+    <string name="dog_name_4">Luke</string>
+    <string name="dog_name_5">Faye</string>
+    <string name="dog_name_6">Aoi</string>
+    <string name="dog_name_7">Moana</string>
+    <string name="dog_name_8">Otto</string>
+    <string name="dog_name_9">Dobby</string>
+    <string name="dog_description_1">Comer guloseimas no terraço</string>
+    <string name="dog_description_2">Latir para o papai</string>
+    <string name="dog_description_3">Roubar meias</string>
+    <string name="dog_description_4">Conhecer novo animal</string>
+    <string name="dog_description_5">Digging in the garden</string>
+    <string name="dog_description_6">Cavando no jardim</string>
+    <string name="dog_description_7">Lambendo suas patas</string>
+    <string name="dog_description_8">Banho de sol</string>
+    <string name="dog_description_9">Dormindo em lugares diferentes</string>
+    <string name="about">Sobre:</string>
+    <string name="years_old">%d idade</string>
+    <string name="expand_button_content_description">Veja + ou - informações sobre um cachorro.</string>
 </resources>
