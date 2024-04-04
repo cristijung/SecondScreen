@@ -33,6 +33,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             SecondScreenTheme {
                 // O conteiner Surface usa a cor de 'fundo' do tema
+                // por enquanto estamos usando a padrão do Material
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -78,7 +79,6 @@ fun DogIcon(
             .size(dimensionResource(R.dimen.image_size))
             .padding(dimensionResource(R.dimen.padding_small)),
         painter = painterResource(dogIcon),
-
         // A descrição do conteúdo não é necessária aqui - a imagem é decorativa e define um conteúdo null
         // description permite que os serviços de acessibilidade ignorem este elemento durante a navegação.
         contentDescription = null
@@ -109,3 +109,4 @@ fun SecondScreenPreview() {
         SecondScreenApp()
     }
 }
+
