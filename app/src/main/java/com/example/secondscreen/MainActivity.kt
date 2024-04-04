@@ -32,11 +32,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             SecondScreenTheme {
-                // A surface container using the 'background' color from the theme
+                // O conteiner Surface usa a cor de 'fundo' do tema
                 Surface(
-                    modifier = Modifier.fillMaxSize()
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
                 ) {
-                    //Greeting("Android")
                     SecondScreenApp()
                 }
             }
@@ -79,9 +79,8 @@ fun DogIcon(
             .padding(dimensionResource(R.dimen.padding_small)),
         painter = painterResource(dogIcon),
 
-        // Content Description is not needed here - image is decorative, and setting a null content
-        // description allows accessibility services to skip this element during navigation.
-
+        // A descrição do conteúdo não é necessária aqui - a imagem é decorativa e define um conteúdo null
+        // description permite que os serviços de acessibilidade ignorem este elemento durante a navegação.
         contentDescription = null
     )
 }
@@ -103,7 +102,7 @@ fun DogInformation(
     }
 }
 
-@Preview
+@Preview(showBackground = true) //por enquanto usamos o padrão que está no surface
 @Composable
 fun SecondScreenPreview() {
     SecondScreenTheme(darkTheme = false) {
