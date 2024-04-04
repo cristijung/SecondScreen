@@ -21,7 +21,7 @@
     <string name="dog_description_9">Dormindo em lugares diferentes</string>
     <string name="dog_description_10">Sempre no charme</string>
     <string name="about">Sobre:</string>
-    <string name="years_old">%d idade</string>
+    <string name="years_old">%d anos</string>
     <string name="expand_button_content_description">Veja + ou - informações sobre um cachorro.</string>
 </resources>
 

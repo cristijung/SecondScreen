@@ -75,8 +75,8 @@ fun DogIcon(
 ) {
     Image(
         modifier = modifier
-            .size(dimensionResource(R.dimen.image_size))  //verificarrrrrr
-            .padding(dimensionResource(R.dimen.padding_small)), //verificarrrr
+            .size(dimensionResource(R.dimen.image_size))
+            .padding(dimensionResource(R.dimen.padding_small)),
         painter = painterResource(dogIcon),
 
         // Content Description is not needed here - image is decorative, and setting a null content
