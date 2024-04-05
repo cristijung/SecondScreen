@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
                 // por enquanto estamos usando a padrão do Material
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
+                    //color = MaterialTheme.colorScheme.background
                 ) {
                     SecondScreenApp()
                 }
@@ -69,6 +69,7 @@ fun DogItem(
     }
 }
 
+// composable que exibe as fotos dos dogs
 @Composable
 fun DogIcon(
     @DrawableRes dogIcon: Int,
@@ -85,6 +86,7 @@ fun DogIcon(
     )
 }
 
+// composable que exibe o nome e idade dos dogs
 @Composable
 fun DogInformation(
     @StringRes dogName: Int,

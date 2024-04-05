@@ -14,9 +14,9 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
-import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.material3.lightColorScheme
-import androidx.compose.material3.darkColorScheme
+import androidx.compose.material3.Shapes
+
+
 //os que não estão sendo usados ainda deixei
 
 
@@ -85,19 +85,39 @@ private val DarkColors = darkColorScheme(
     scrim = md_theme_dark_scrim,
 )
 
+
+
 @Composable
-fun AppTheme(
-    useDarkTheme: Boolean = isSystemInDarkTheme(),
+fun SecondScreenTheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    // cor dinâmica disponível só para Android 12
+    dynamicColor: Boolean = false,
     content: @Composable() () -> Unit
 ) {
-    val colors = if (!useDarkTheme) {
-        LightColors
-    } else {
-        DarkColors
+    val colorScheme = when {
+        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
+            val context = LocalContext.current
+            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+        }
+        darkTheme -> DarkColors
+        else -> LightColors
+    }
+    val view = LocalView.current
+    if (!view.isInEditMode) {
+        SideEffect {
+            val window = (view.context as Activity).window
+            window.statusBarColor = colorScheme.primary.toArgb()
+            WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = darkTheme
+        }
     }
 
+    //val MyCustomShapes = shapes
     MaterialTheme(
-        colorScheme = colors,
+        colorScheme = colorScheme,
+        //shapes = Shapes,
+        typography = Typography,
         content = content
     )
 }
+
+

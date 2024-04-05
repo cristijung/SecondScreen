@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">MyWoofWoof</string>
-    <string name="dog_name_1">Koda</string>
+    <string name="dog_name_1">Ahri</string>
     <string name="dog_name_2">Leia</string>
     <string name="dog_name_3">Seth</string>
     <string name="dog_name_4">Luke</string>
-    <string name="dog_name_5">Faye</string>
+    <string name="dog_name_5">Pitty</string>
     <string name="dog_name_6">Aoi</string>
     <string name="dog_name_7">Moana</string>
     <string name="dog_name_8">Otto</string>
