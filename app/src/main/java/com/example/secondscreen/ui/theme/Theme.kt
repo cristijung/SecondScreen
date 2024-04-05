@@ -90,7 +90,7 @@ private val DarkColors = darkColorScheme(
 @Composable
 fun SecondScreenTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // cor dinâmica disponível só para Android 12
+    // cor dinâmica disponível só a partir de Android 12
     dynamicColor: Boolean = false,
     content: @Composable() () -> Unit
 ) {
@@ -111,7 +111,7 @@ fun SecondScreenTheme(
         }
     }
 
-    //val MyCustomShapes = shapes
+
     MaterialTheme(
         colorScheme = colorScheme,
         //shapes = Shapes,
@@ -119,5 +119,6 @@ fun SecondScreenTheme(
         content = content
     )
 }
+
 
 
