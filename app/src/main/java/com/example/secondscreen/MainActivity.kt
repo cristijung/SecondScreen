@@ -116,10 +116,18 @@ fun DogInformation(
     }
 }
 
-@Preview(showBackground = true) //por enquanto usamos o padrão que está no surface
+@Preview
 @Composable
 fun SecondScreenPreview() {
     SecondScreenTheme(darkTheme = false) {
+        SecondScreenApp()
+    }
+}
+
+@Preview
+@Composable
+fun SecondDarkThemePreview() {
+    SecondScreenTheme(darkTheme = true) {
         SecondScreenApp()
     }
 }
