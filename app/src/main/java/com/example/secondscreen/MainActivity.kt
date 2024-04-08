@@ -56,7 +56,11 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun SecondScreenApp() {
-    Scaffold { it ->
+    Scaffold(
+        topBar = {
+            SecondScreenTopAppBar()
+        }
+    ) { it ->
         LazyColumn(contentPadding = it) {
             items(dogs) {
                 DogItem(
