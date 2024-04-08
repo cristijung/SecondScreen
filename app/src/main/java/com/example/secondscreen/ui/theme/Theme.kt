@@ -17,7 +17,7 @@ import androidx.core.view.WindowCompat
 import androidx.compose.material3.Shapes
 
 
-//os que não estão sendo usados ainda deixei
+
 
 
 private val LightColors = lightColorScheme(
@@ -114,7 +114,7 @@ fun SecondScreenTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        //shapes = Shapes,
+        shapes = Shapes,
         typography = Typography,
         content = content
     )
