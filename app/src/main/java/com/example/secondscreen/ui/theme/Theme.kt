@@ -86,7 +86,7 @@ private val DarkColors = darkColorScheme(
 )
 
 
-
+// definições para o app
 @Composable
 fun SecondScreenTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
