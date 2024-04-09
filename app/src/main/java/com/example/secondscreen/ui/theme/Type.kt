@@ -8,8 +8,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.example.secondscreen.R
 
-val AbrilFatface = FontFamily(
-    Font(R.font.abril_fatface_regular)
+
+
+val QuickSand = FontFamily(
+    Font(R.font.quicksand_regular)
 )
 
 val Montserrat = FontFamily(
@@ -19,7 +21,7 @@ val Montserrat = FontFamily(
 
 val Typography = Typography(
     TextStyle(
-        fontFamily = AbrilFatface,
+        fontFamily = QuickSand,
         fontWeight = FontWeight.Normal,
         fontSize = 36.sp
     ),

@@ -18,6 +18,22 @@
           <timeTargetWasSelectedWithDropDown value="2024-04-02T21:05:58.288147600Z" />
         </State>
       </entry>
+      <entry key="SecondDarkThemePreview">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\cristina.jung\.android\avd\VanillaIceCream.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-04-09T16:26:46.204686900Z" />
+        </State>
+      </entry>
       <entry key="SecondScreenPreview">
         <State>
           <targetSelectedWithDropDown>
