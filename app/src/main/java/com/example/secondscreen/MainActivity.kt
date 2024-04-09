@@ -103,7 +103,17 @@ fun DogItem(
             Spacer(modifier = Modifier.weight(1f))
             DogItemButton(
                 expanded = expanded,
-                onClick = { /*TODO*/ }
+                onClick = {  expanded = !expanded  }
+            )
+        }
+        if (expanded) {
+            DogHobby(
+                dog.hobbies, modifier = Modifier.padding(
+                    start = dimensionResource(R.dimen.padding_medium),
+                    top = dimensionResource(R.dimen.padding_small),
+                    bottom = dimensionResource(R.dimen.padding_medium),
+                    end = dimensionResource(R.dimen.padding_medium)
+            )
             )
         }
     }
